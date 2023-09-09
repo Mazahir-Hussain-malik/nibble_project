@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tahoma">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+    }
+
+    .whats-app,
+    .whats-app1 {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      /* left: 100px; */
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whats-app {
+      right: 35px;
+      transition: 0.3s ease-in-out;
+
+    }
+
+    .whats-app:hover {
+      background-color: #fff;
+      color: #25d366;
+    }
+
+    .whats-app1 {
+      left: 35px;
+      background-color: #E4D00A;
+      transition: 0.3s ease-in-out;
+    }
+
+    .whats-app1:hover {
+      background-color: #fff;
+      color: #E4D00A;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+
+    .myphone {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<title>Chef term And Condition</title>
+
+<body>
+  <a class="whats-app"
+    href='https://api.whatsapp.com/send?phone=+918448933874&text=Hello,%20Nibble%20Customer%20%20Service...?'
+    target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+  <a class="whats-app1" href='tel:+918448933874'>
+    <i class="fa-sharp fa-solid fa-phone myphone"></i>
+  </a>
+  <nav class="w-full bg-white shadow-lg fixed " style="z-index: 99;">
+    <div class="flex justify-between md:w-full w-[80%] mx-auto ">
+      <div class="md:hidden block flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <a href="home.html" class="flex items-center py-4 px-2">
+            <img src="Assets/images/logo.jpeg" alt="Logo" class="h-8 w-full mr-2" />
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block sticky top-0 z-10 w-full">
+        <nav class="flex justify-around bg-white shadow-lg py-2">
+          <span class="w-100">
+            <a href="#">
+              <img src="./assets/images/logo.jpeg" alt="logo_img" class="h-[10vh]" /></a>
+          </span>
+
+          <ul class="flex justify-item-center w-100 my-auto ml-4">
+            <li class="lg:mx-6 mx-2 text-gray-700">
+              <a href="./home.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">HOME</a>
+            </li>
+            <li class="lg:mx-6 mx-3 relative group ">
+              <a href="#"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">WHO
+                WE ARE
+                <i class="fa-sharp fa-solid fa-angle-down"></i>
+              </a>
+
+              <ul
+                class="absolute bg-white py-0 w-[180%] hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block ">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./aboutus.html" class="ml-3">ABOUT US </a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gallery.html" class="ml-3">GALLERY</a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./media.html" class="ml-3">MEDIA AND EVENTS </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3 group">
+              <a href="./dilaveryarea.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">DELIVERY
+                AREAS
+                <i class="fa-sharp fa-solid fa-angle-down"></i></a>
+              <ul
+                class="absolute bg-white py-2 hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block w-[200px]">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gurgaon.html" class="ml-3">Gurgaon </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./blogs.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">BLOGS</a>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./contect.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">CONTACT
+                US
+              </a>
+            </li>
+            <li class="lg:mx-4 mx-3">
+              <a href="./howToOrder.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+                  class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  HOW TO ORDER
+                </button></a>
+            </li>
+            <li class="lg:mx-4 mmx-3">
+              <a href="./joinshef.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                <button
+                  class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  JOIN AS A CHEF
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500" x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active my-3">
+          <a href="./home.html" class="block text-sm px-2 py-2 text-white bg-[#E4D00A]">HOME</a>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="#" class="py-2 px-2 text-gray-500 transition duration-300">WHO WE ARE <span><i
+                class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white z-10 shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-2 hover:bg-gray-100"><a href="./aboutus.html"
+                class="block text-gray-700 ml-3 text-md ">ABOUT US </a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./Gallery.html"
+                class="block text-gray-700 ml-3">GALLERY</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./media.html"
+                class="block text-gray-700 ml-3  ">News And Events</a></li>
+          </ul>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="./dilaveryarea.html" class="py-4 px-2  text-gray-500 transition duration-300">DELIVERY
+            AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden z-10  mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="./Gurgaon.html"
+                class="block text-gray-700 ml-3 ">GURGAON</a></li>
+          </ul>
+        </li>
+
+        <li class="my-3">
+          <a href="./blogs.html" class="py-4 px-2 text-gray-500 transition duration-300">BLOGS</a>
+        </li>
+        <li class="my-3">
+          <a href="./contect.html"
+            class="py-4 px-2 uppercase text-gray-500 transition duration-300">Contact Us</a>
+        </li>
+        <li class="lg:mx-4 mx-3">
+          <a href="./howToOrder.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+              class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              HOW TO ORDER
+            </button></a>
+        </li>
+        <li class="lg:mx-4 my-2 mx-3">
+          <a href="./joinshef.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+            <button
+              class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              JOIN AS A CHEF
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    This document is an electronic record in Chefs Term & Conditions of
+    Information Technology Act, 2000 and rules made thereunder pertaining to
+    electronic records. This document is published in accordance with the
+    provisions of Rule 3 (1) of the Information Technology (Intermediaries
+    guidelines) Rules, 2011 that require publishing the rules and regulations,
+    privacy policy and Terms of Use for access or usage of Nibble website and
+    Nibble application for mobile and handheld devices. The Website and the
+    Application for handheld devices are jointly referred to as the “Platform”.
+    DEFINITIONS : User: “User” or “You” or ““Your” refers to you, as a user of
+    the Services. A user is someone who accesses or uses the Services for the
+    purpose of hosting, publishing, transacting, sharing, displaying or
+    uploading information or views or pictures and includes other persons
+    jointly participating in using the Services, including, without limitation,
+    a user having access to “Home Chef business page’ to manage claimed Home
+    Chef listings or otherwise. Content: “Content” will include (but is not
+    limited to) reviews, images, photos, audio, video, location data, nearby
+    places, and all other forms of information or data. “Your content” or “User
+    Content” means content that you upload, share or transmit to, through or in
+    connection with the Services, such as likes, ratings, reviews, images,
+    photos, messages, profile information, and any other materials that you
+    publicly display or displayed in your account profile. “Third Party Content”
+    means content that comes from parties other than Nibble or its users and is
+    available on the Services. “Nibble Content” means content that “Nibble”
+    creates and make available in connection with the Services including, but
+    not limited to, graphics, design, compilation, computer code, products,
+    software, visual interfaces, interactive features, aggregate ratings,
+    reports and other usage-related data in connection with activities
+    associated with your account and all other elements and components of the
+    Services excluding Your Content and Third Party Content. Chefs Terms:
+    Company Name(hereinafter referred to as “Nibble “, “company”, “we”, “us”, or
+    “our”) provides an online marketplace/App for handheld devices that connects
+    Home-chefs who want to provide Food Services to users looking for home
+    cooked meals (collectively, the “Services”). By using the Application and
+    the Services, you agree to comply with and be legally bound by the terms and
+    conditions of these Terms of Service (“Terms”), whether or not you become a
+    registered user of the Services. These Terms govern your access to and use
+    of the Application, Services and all content, and your participation in
+    referral and other promotion programs undertaken by us from time to time
+    (“Referral Programs”), and these terms of use constitute a binding legal
+    agreement between you and Nibble. Please read carefully these Terms and our
+    Privacy Policy, which may be found here, and which is incorporated by
+    reference into these Terms. If you do not agree to these Terms, you have no
+    right to obtain information from and/or otherwise use the Application or
+    Services. These Terms of Service (the “Terms”) are intended to make you
+    aware of your legal rights and responsibilities with respect to your access
+    to and use of the website at [web address] (the “Site”) and any related
+    mobile or software applications including but not limited to delivery of
+    information via the website whether existing now or in the future that link
+    to the Terms (collectively, the “Services”). These Terms are effective for
+    all existing and future users, including but without limitation to users
+    having access to ‘restaurant business page’ to manage their claimed business
+    listings. Please read these Terms of Use carefully before you use the
+    services. If you do not agree to these Terms of Use, you may not use the
+    services on the Platform, and we request you to uninstall the App. By
+    installing, downloading or even merely using the Platform, you shall be
+    contracting with Nibble and signify your acceptance to the Terms of Use and
+    other policies (including but not limited to the Cancellation & Refund
+    Policy, Privacy Policy and Take Down Policy) as posted on the Platform from
+    time to time. Which takes effect on the date on which you download, install
+    or use the Services, and create a legally binding arrangement to abide by
+    the same. You may not use the Services if you do not accept the Terms or are
+    unable to be bound by the Terms. Your use of the Platform is at your own
+    risk, including the risk of data theft, virus attack or that you might be
+    exposed to content that is objectionable, or otherwise inappropriate. The
+    Content on these Services is for informational purposes only. Nibble
+    disclaims any liability for any information that may have become outdated
+    since the last time the particular piece of information was updated. Nibble
+    reserves the right to make changes and corrections to any part of the
+    Content on these Services at any time without prior notice. Nibble does not
+    guarantee quality of the Goods, the prices listed in menus or the
+    availability of all menu items at any of the listing of Home Chefs.
+    ELIGIBILITY TO USE THE SERVICES: You hereby represent and warrant that you
+    are at least eighteen (18) years of age or above and are fully able and
+    competent to understand and agree the terms, conditions, obligations,
+    affirmations, representations, and warranties set forth in these Terms. You
+    further declare that you are in compliance with all laws and regulations in
+    the locality/state/country in which you live when you access and use the
+    Services. You agree to use the Services only in compliance with these Terms
+    and applicable law, and in a manner that does not violate our legal rights
+    or those of any third party(ies). We may vary or amend or change or update
+    these Terms, from time to time entirely at its own discretion. Your use of
+    Platform after any such amendment or change in the Terms shall be deemed as
+    your express acceptance to such amended/changed terms and you also agree to
+    be bound by such changed/amended Terms. You shall be responsible for
+    checking these Terms from time to time and ensure continued compliance with
+    these Terms. These Terms of Use are subject to modifications at any time. We
+    reserve the right to modify or change these Terms of Use and other Nibble
+    policies at any time by posting changes on the Platform, and you shall be
+    liable to update yourself of such changes, if any, by accessing the changes
+    on the Platform. You shall, at all times, be responsible for regularly
+    reviewing the Terms of Use and the other Nibble policies and note the
+    changes made on the Platform. Your continued usage of the services after any
+    change is posted constitutes your acceptance of the amended Terms of Use and
+    other Nibble policies. As long as you comply with these Terms of Use, Nibble
+    grants you a personal, non-exclusive, non-transferable, limited privilege to
+    access, enter, and use the Platform. By accepting these Terms of Use, you
+    also accept and agree to be bound by the other terms and conditions and
+    Nibble policies as may be posted on the Platform from time to time. SERVICES
+    PROVIDED BY US: Nibble is constantly evolving in order to provide the best
+    possible experience and information to its users. The primary purpose of
+    services is to connect the Home Chefs to the users. Except connecting the
+    users to Home Chefs, we are not providing any services, of whatever nature
+    to the users. Users acknowledge that Nibble is not charging any
+    consideration from the users to provide the services. As no consideration is
+    charged from the users, there is no consumer-service provider relationship
+    between users and Nibble. The services are freely offered to the users, and
+    users are free to discontinue receiving services anytime they wish. You
+    acknowledge and agree that the form and nature of the Services which Nibble
+    provides, may require effecting certain changes in it, therefore, Nibble
+    reserves the right to suspend/cancel, or discontinue any or all products or
+    services at any time without notice, make modifications and alterations in
+    any or all of its contents, products and services contained on the site
+    without any prior notice. TRANSACTION All commercial/contractual terms are
+    offered by Home chefs and agreed to, is between Buyers and Home Chefs alone.
+    The commercial/contractual terms include without limitation price, taxes,
+    shipping costs, payment methods, payment terms, date, period and mode of
+    delivery, warranties related to products and services and after sales
+    services related to products and services. Nibble does not have any control
+    or does not determine or advise or in any way involve itself in the offering
+    or acceptance of such commercial/contractual terms between the Buyers and
+    Merchants. Nibble may, however, offer support services to Home Chefs in
+    respect to order fulfilment, payment collection, call centre, and other
+    services, pursuant to independent contracts executed by it with the Home
+    Chefs. The user acknowledge that they are stranger to this contract and they
+    have nothing to do with this contract. Nibble does not make any
+    representation or warranty as to the item-specifics (such as legal title,
+    creditworthiness, identity, etc.) or specifics such as quality, value,
+    saleability, etc.) of any of the Home Chefs. You are advised to
+    independently verify the bona fides of any particular Home Chefs that you
+    choose to deal with on the Platform and use your best judgment in that
+    behalf. All Home Chefs offers and third-party offers are subject to
+    respective party terms and conditions. Nibble takes no responsibility for
+    such offers. Nibble is operating an online marketplace and assumes the role
+    of facilitator, and does not at any point of time during any transaction
+    between Buyer and Home Chefs on the Platform come into or take possession of
+    any of the products or services offered by Home Chefs. At no time shall
+    Nibble hold any right, title or interest over the products nor shall Nibble
+    have any obligations or liabilities in respect of such contract entered into
+    between Buyer and Home Chefs. Nibble is only providing a platform for
+    communication and it is agreed that the contract for sale/service of any of
+    the products or services shall be a strictly bipartite contract between the
+    Home Chefs and the Buyer. Nibble does not endorse any Members, home chefs,
+    any Meals or any Member Content or any sale or service. In addition,
+    although these Terms require Home Chefs/Users to provide accurate
+    information, we do not attempt to confirm, and do not confirm, any
+    Member’s/user purported identity. You are responsible for determining the
+    identity and suitability of others who you contact via the Application and
+    Services. We will not be responsible for any damage or harm resulting from
+    your interactions with other Members/users. By using the Application or
+    Services, you agree that any legal remedy or liability that you seek to
+    obtain for actions or omissions of other Members/users or other third
+    parties will be limited to a claim against the particular Members or other
+    third parties who caused you harm and you agree not to attempt to impose
+    liability on, or seek any legal remedy from Nibble with respect to such
+    actions or omissions. Accordingly, we encourage you to communicate directly
+    with other Members on the Services regarding any Meals or services. The Home
+    Chefs are solely responsible for honouring any confirmed bookings and making
+    available any dishes/service reserved through the platform. If you, as a
+    Nibble buyer, choose to enter into a transaction with a Home Chefs for the
+    booking of a Meal, you agree and understand that you will be required to
+    enter into an agreement with the Home Chefs and you agree to accept any
+    terms, conditions, rules and restrictions associated with such Meal imposed
+    by the Home Chefs. You acknowledge and agree that you, and not Nibble, will
+    be responsible for performing the obligations of any such agreements, and we
+    are not a party to such agreements and disclaims all liability arising from
+    or related to any such agreements. YOUR ACCOUNT: You may have to create an
+    account in order to use some of the features offered by the platform,
+    including without limitation to specific pages for Home Chefs on the
+    Platform. Use/storage of any personal information you provide to us during
+    the account creation process is governed by our Privacy Policy. You must
+    keep your password confidential [wherever required] and you are solely
+    responsible for maintaining the confidentiality and security of your
+    account, all changes and updates submitted through your account, and all
+    activities that occur in connection with your account.You are always and
+    solely responsible for all activities that occur in your account. You agree
+    to notify us immediately of any unauthorized use of your account in order to
+    enable us to take necessary corrective action. You may also be able to
+    register to use the platform by logging into your account with your
+    credentials from certain third-party social networking sites (e.g.,
+    Facebook, Gmail, LinkedIn etc). You confirm that you are the owner of any
+    such social media account and that you are entitled to disclose your social
+    media login information to us. You authorize us to collect your
+    authentication information, and other information that may be available on
+    or through your social media account consistent with your applicable
+    settings and instructions. In creating an account, you represent to us that
+    all information provided to us in such process is true, accurate and
+    correct, and that you will update your information as and when necessary in
+    order to keep it accurate. You may not impersonate someone else, create or
+    use an account for anyone other than yourself, provide an email address
+    other than your own, create multiple accounts or Home Chef listings except
+    as otherwise authorized by us, or provide or use false information to obtain
+    access to platform that you are not legally entitled to claim. You
+    acknowledge that any false claim may result in substantial losses or damage
+    to Nibble or third parties, for which you may be held liable and
+    accountable. ADVERTISING Some of the Services are/may be supported by
+    advertising revenue and may display advertisements and promotions. These
+    advertisements may be targeted to the content of information stored on the
+    platform, queries made through the platform or other information. The
+    manner, mode and extent of advertising on the platform are subject to change
+    without specific notice to you. You agree that Nibble may place such
+    advertising on the platform. Part of the platform may contain advertising
+    information or promotional material or other material submitted to Nibble by
+    third parties or Users. Responsibility for ensuring that material submitted
+    for inclusion on the Platform or mobile apps complies with applicable
+    international and national law is exclusively on the party providing the
+    information/material. Your correspondence or business dealings with, or
+    participation in promotions of, advertisers through the Platform, including
+    payment and delivery of related goods or services, and any other terms,
+    conditions, warranties or representations associated with such dealings,
+    shall be solely between you and such advertiser. Nibble will not be
+    responsible or liable for any error or omission, inaccuracy in advertising
+    material or any loss or damage of any sort incurred as a result of any such
+    dealings or as a result of the presence of such other advertiser(s) on the
+    Platform and mobile application. LINKS: The Application and Services may
+    contain links to third-party websites or resources. You acknowledge and
+    agree that Nibble is not responsible or liable for: (i) the availability or
+    accuracy of such websites or resources or (ii) the content, products, or
+    services on or available from such websites or resources. Links to such
+    websites or resources do not imply any endorsement by Nibble of such
+    websites or resources or the content, products, or services available from
+    such websites or resources. OWNERSHIP: You acknowledge and agree that the
+    Application, Services and Collective Content, including all associated
+    intellectual property rights is the exclusive property of Nibble and its
+    licensors. You will not remove, alter or obscure any copyright, trademark,
+    service mark or other proprietary rights notices incorporated in or
+    accompanying the Application, Services, or Collective Content. CONTENT IS
+    PROTECTED: All text, photographs, trademarks, logos, sounds, graphics, user
+    interfaces, visual interfaces, music, artwork and computer code
+    (collectively, “Content”), including but not limited to the design,
+    structure, coordination, selection, expression, “look and feel” and
+    arrangement of such Content, contained on the platform is owned, controlled
+    or licensed by or to Nibble, and is protected by trade dress, copyright,
+    patent and trademark laws, and various other intellectual property rights
+    laws. Except as expressly provided in these Terms of Use, no part of the
+    platform and no Content may be copied, reproduced, republished, publicly
+    displayed, encoded, translated, uploaded, posted, transmitted or distributed
+    in any way (including “mirroring”) to any other computer, server, website or
+    other medium for publication or distribution or for any commercial
+    enterprise, without our expressed prior consent. USER CONTENT: That the
+    user/chef understands and consents to the use of his/her likeness, pictures,
+    videos and clinical details related to his product/her person in photographs
+    and videos for Company Name on their website or app, as well as in publicity
+    concerning the same. That the company shall have the sub-licensable and
+    worldwide right to use any details, photographs, videos etc. in any legally
+    permissible manner whatsoever. The use may include, but is not limited to,
+    editing, duplication, licensing, distribution and incorporation in other
+    works, in whatever form (e.g. hard copy or electronic), such as posters,
+    publications, web sites, films or videos, and their unrestricted use,
+    without any obligation on the part of Company Name to seek any further
+    authorization by the undersigned. That the user/chef understands and agrees
+    that he/she will not be entitled to receive any consideration or payment or
+    royalty or credit for the use of photograph/video/details etc. related to
+    their product or person etc. pursuant to this agreement. Any photographs or
+    product or person, video or other details shared on App or website or
+    created by the company shall be the exclusive property of the company and
+    the company may use it in any legally permissible manner, including but not
+    limited to advertising, promotion etc. The rights/permissions granted
+    through this agreement is irrevocable. ACCEPTANCE OF TERMS On acceptance of
+    above said terms, Nibble grants you a personal, limited, non-exclusive and
+    non-transferable license to access and use the Services only as expressly
+    permitted in these Terms. You shall not use the Services for any illegal
+    purpose or in any manner inconsistent with these Terms. You may use
+    information made available through the Services solely for your personal,
+    non- commercial use. You agree not to use, copy, display, distribute,
+    modify, broadcast, translate, reproduce, reformat, incorporate into
+    advertisements and other works, sell, promote, create derivative works, or
+    in any way exploit or allow others to exploit any of content in whole or in
+    part except as expressly authorized by us. Except as otherwise expressly
+    granted to you in writing, we do not grant you any other express or implied
+    right or license to the Services, Content or our IP Rights. Any violation by
+    you of the license provisions contained in this Section may result in the
+    immediate termination of your right to use the Services, as well as
+    potential liability for copyright and other IP Rights infringement depending
+    on the circumstances. You acknowledge and agree that if Nibble disables
+    access to your account, you may be prevented from accessing the Services,
+    your account details or any files or other content, which is contained in
+    your account. We may, in our discretion and without liability to you, with
+    or without cause, with or without prior notice and at any time: (a)
+    terminate or suspend these Terms or your access to our Application and
+    Services. PRIVACY POLICY You represent that you have read understood and
+    agreed to our Privacy Policy. Please note that we may disclose information
+    about you to third parties or government authorities if we believe that such
+    a disclosure is reasonably necessary to (i) take action regarding suspected
+    illegal activities; (ii) enforce or apply our Terms and Privacy Policy;
+    (iii) comply with legal process or other government inquiry, such as a
+    search warrant, subpoena, statute, judicial proceeding, or other legal
+    process/notice served on us; or (iv) protect our rights, reputation, and
+    property, or that of our users, affiliates, or the general public. WE CARE
+    ABOUT YOUR PRIVACY: We, at Nibble, are committed to respect your privacy and
+    to comply with applicable data protection and privacy regulations as
+    applicable in India. This privacy policy (“Policy”) describes how we collect
+    and use personal information. “Personal information” means information
+    relating to you or another identifiable individual who has signed up on the
+    Application to secure our services. WE DO NOT COLLECT PERSONAL INFORMATION:
+    As a general rule, this website does not collect personal information about
+    you when you visit the website, browse on the site or see information
+    available on the site. You can generally visit the site without revealing
+    personal information, unless you choose to provide such information through
+    “Sign Up” process. When you access our services online, our web servers
+    automatically create records of your visit. These records typically include
+    IP-address, access times, the sites linked from, pages visited, the links
+    and features used, the content viewed or requested, browser or application
+    type, language and other such information. We will not identify users or
+    their browsing activities, except when a law enforcement agency may exercise
+    a warrant to inspect the service providers logs. The application will
+    collect personal data in order to provide you with the best services and
+    support. The personal information may include, but is not limited to, your
+    Name, Address(es), Phone Number, Email Address, E-mail address and Gender
+    that could help the application identify you. WHAT INFORMATION IS COLLECTED:
+    Most of the personal information is collected from you when you sign up for
+    an account on the application to avail the services offered by Nibble. Some
+    more data can be collected when you contact the customer service through
+    calls or e-mail. Information may also be collected in case of adding any
+    favourites or saving any preferences on the application or subscribing to
+    the mailing list. IN ORDER TO DELIVER THE BEST SERVICES TO YOU, WE MAY
+    COLLECT THE FOLLOWING INFORMATION: Account related information is collected
+    when you sign up for our Services. Your personal data may include
+    information such as Name, Address(es), Phone Number, Email Address, E-mail
+    address and Gender, or other data that could directly or indirectly identify
+    you. Service Usage Data is automatically collected when you interact with
+    our website. This information may include data about your interactions with
+    website features, content and links contained in our Services, time of
+    interaction, browser type and configuration, operating system used, IP
+    address, language preferences, and other cookie data. While none of this
+    data will allow us to directly identify who you are, some of this data can
+    be used to approximate your location. For additional information on how to
+    manage the technologies we use, please visit our “cookie policy”.
+    Supplementary Data may be received about you from third party sources, such
+    as public databases or if your sign-up of log-in through third party service
+    provides like Facebook or twitter or email. We may combine this data with
+    the information we already have about you in order to maintain accuracy of
+    our records, and provide services/information that you may be interested in.
+    HOW THE INFORMATION IS USED: We strive to collect the information that is of
+    utmost importance to ensure that the user has a good experience of using the
+    application while all other regulations are complied with. We only collect
+    relevant information after securing the requisite permission from the user
+    when it is needed to deliver the services you have requested, for legal
+    compliance or for any other lawful purpose. AGENTS: We employ other
+    companies and people to perform tasks on our behalf and need to share your
+    information with them to provide products or services to you. Unless we tell
+    you differently, our agents do not have any right to use the Personal
+    Information we share with them beyond what is necessary to assist us. USER
+    PROFILES AND SUBMISSIONS: Certain user profile information, including
+    without limitation a user’s name and location may be displayed to other
+    users to facilitate user interaction within the Application and Services or
+    address your request for Company’s services. Your account privacy settings
+    allow you to limit the other users who can see the Personal Information in
+    your user profile and/or what information in your user profile is visible to
+    others. However, we do not control the policies and practices of any other
+    third-party site or service which may interact with our Application and
+    Services. TRANSFERS: We may choose to buy or sell assets. In these types of
+    transactions, customer information is typically one of the business assets
+    that would be transferred. Also, if we (or our assets) are acquired, or if
+    we go out of business, enter bankruptcy, or go through some other change of
+    control, Personal Information would be one of the assets transferred to or
+    acquired by a third party. CHANGES TO OUR PRIVACY POLICY: We reserve the
+    right to modify/amend this Privacy Policy at any time. Please review this
+    document whenever you visit our website, so that you are aware of what
+    information we collect and how we use it. DATA PROTECTION CONCERN: We
+    maintain your personal data subject to Data Protection Regulation applicable
+    in India. If you have any questions or concerns regarding our Privacy
+    Policy, you may contact us by Email: chefsupport@Nibble.com and We will
+    respond to all requests within 30 days. ACCEPTANCE OF THE POLICY: By
+    visiting our website, signing up or logging into the website, uploading
+    information on our website; you acknowledge and unconditionally accept the
+    policy. If you do not agree with this Policy, do not use our website and
+    services or provide any of your personal data. COOKIES: We use cookies and
+    other identification technologies for various purposes, including:
+    authenticating users, store information about you (including on your device
+    or in your browser cache) and your use of our Services and the Nibble
+    Platform, remembering user preferences and settings, determining the
+    popularity of content, delivering and measuring the effectiveness of
+    advertising campaigns, analyzing site traffic and trends, and generally
+    understanding the online behaviours and interests of people who interact
+    with our Services. We use a number of suppliers that may also set cookies on
+    your device on our behalf when you visit the Nibble Platform to allow them
+    to deliver the services they are providing. When you visit the Nibble
+    Platform you may receive cookies from third party websites or domains. More
+    information about these cookies may be available on the relevant third
+    party’s website. GENERAL TERMS Interpretation: The section and subject
+    headings in these Terms are included for reference only and shall not be
+    used to interpret any provisions of these Terms. Entire Agreement and
+    Waiver: The Terms, together with the ‘Privacy Policy’ and ‘Guidelines and
+    Policies’, shall constitute the entire agreement between you and us
+    concerning the Services. No failure or delay by us in exercising any right,
+    power or privilege under the Terms shall operate as a waiver of such right
+    or acceptance of any variation of the Terms and nor shall any single or
+    partial exercise by either party of any right, power or privilege preclude
+    any further exercise of that right or the exercise of any other right, power
+    or privilege. Severability: If any provision of these Terms is deemed
+    unlawful, invalid, or unenforceable by a judicial court for any reason, then
+    that provision shall be deemed severed from these Terms, and the remainder
+    of the Terms shall continue in full force and effect. Partnership or
+    Agency: Acceptance of these terms and conditions merely amounts to
+    acceptance for the purpose of use of the platform. None of the provisions of
+    these Terms shall be deemed to constitute a partnership or agency or
+    consumer or any specific legal relationship between you and Nibble and you
+    shall have no authority to bind Nibble in any form or manner, whatsoever.
+    Governing Law: These Terms of Use are governed by the laws of India. Any
+    action, suit, or other legal proceeding, which is commenced to resolve any
+    matter arising under or relating to this Platform, shall be subject to the
+    jurisdiction of the courts at National Capital Territory of Delhi, India.
+    You agree that all matters relating to your access to or use of the
+    platform, including all disputes, will be governed by the laws as applicable
+    in the National Capital Territory of Delhi, India. You further agree that
+    only courts of jurisdiction in the National Capital Territory of Delhi,
+    India shall have exclusive right to entertain any dispute/claim arising out
+    of terms of use of this website. Further you unconditionally submit to the
+    jurisdiction of such courts in the National Capital Territory of Delhi,
+    India. Indemnity: You agree to indemnify and hold Nibble, its officers,
+    directors, shareholders, predecessors, successors in interest, employees,
+    agents, subsidiaries and affiliates, harmless from any demands, loss,
+    liability, claims or expenses (including attorneys’ fees), made against
+    Nibble any third party due to or arising out of or in connection with your
+    use of the Platform. Disclaimer : We do not promise that the platform of any
+    of its content or service of feature will be error-free or uninterrupted. We
+    do not promise that use of this site shall result in any benefit to you or
+    you will achieve specific results. The website is delivered on an as-is and
+    as-available basis. All information provided on the website is subject to
+    change without any notice. We don’t promise that any data downloaded from
+    the site shall be free of viruses or contamination or destructive features.
+    We deny any warranty of accuracy, non-infringement, fitness or usefulness of
+    any feature of this website or content available therein. Limitation of
+    Relief: Your sole remedy/relief against the website or any of its content or
+    feature or service is to stop using the platform or its content. This
+    limitation of relief is part of terms of use of this website. Contact
+    Us: Please contact us for any questions or comments or inquiries regarding
+    this Platform on feedback@ help@Nibble.com GRIEVANCE OFFICER In accordance
+    with Information Technology Act, 2000 and rules made there under, the name
+    and contact details of the Grievance Officer are provided below: Phone: +91
+    9560107937 Email: help@Nibble.com Time: Mon – Sat (9:00 – 18:00)
+
+     <!-- footer-section  -->
+    <br>
+    <br>
+    <div class="bg-[#2C2C2C]">
+      <div class="w-[80%] py-[30px] mx-auto">
+        <div class="flex md:flex-row flex-col justify-between items-start">
+          <div class="mb-10">
+            <a href="home.html">
+              <h2 class="text-[30px] text-white font-bold">
+                <span class="italic">NIBBLE</span>
+              </h2>
+            </a>
+            <div class="text-white text-[20px] mt-[10px]">
+              <a
+                href="https://www.facebook.com/profile.php?id=100094471304554"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-facebook-f mr-4 cursor-pointer hover:text-[#007BB6]"
+                ></i>
+              </a>
+              <a href="https://twitter.com/Nibble_in" target="_blank">
+                <i
+                  class="fa-brands fa-twitter mr-4 cursor-pointer hover:text-[#007BB6]"
+                ></i>
+              </a>
+              <a href="https://www.instagram.com/nibble_in/" target="_blank">
+                <i
+                  class="fa-brands fa-instagram mr-4 cursor-pointer hover:text-[#007BB6]"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="flex sm:flex-row flex-col text-white text-[13px]">
+            <a href="./home.html" class="mr-3">HOME</a>
+            <a href="./Aboutus.html" class="mr-3">ABOUT US</a>
+            <a href="./joinshef.html" class="mr-3">JOIN AN CHEF</a>
+            <a href="./Gallery.html" class="mr-3">MEDIA AND EVENTS</a>
+            <a href="./blogs.html" class="mr-3">BLOG</a>
+            <a href="./contect.html" class="mr-3">CONTACT US</a>
+          </div>
+        </div>
+        <div class="flex md:flex-row flex-col-reverse justify-between my-10">
+          <h2 class="md:text-[17px] text-[15px] text-white font-bold">
+            <span class="italic">Developed by Nibble</span>@2023 All Rights
+            Reserved.
+          </h2>
+          <div class="flex sm:flex-row flex-col text-white text-[13px]">
+            <a href="privacy.html" class="mr-3">PRIVACY POLICY</a>
+            <a href="userstc.html" class="mr-3">USER T&C</a>
+            <a href="cookiespolicy.html" class="mr-3">COOKIE POLICY</a>
+            <a href="cheifstc.html" class="mr-3">CHEFS & TC</a>
+            <a href="faqs.html" class="mr-3">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

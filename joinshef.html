@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tahoma">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+    }
+
+    .whats-app,
+    .whats-app1 {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      /* left: 100px; */
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whats-app {
+      right: 35px;
+      transition: 0.3s ease-in-out;
+
+    }
+
+    .whats-app:hover {
+      background-color: #fff;
+      color: #25d366;
+    }
+
+    .whats-app1 {
+      left: 35px;
+      background-color: #E4D00A;
+      transition: 0.3s ease-in-out;
+    }
+
+    .whats-app1:hover {
+      background-color: #fff;
+      color: #E4D00A;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+
+    .myphone {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<title>NIBBLE</title>
+
+<body>
+  <a class="whats-app"
+    href='https://api.whatsapp.com/send?phone=+918448933874&text=Hello,%20Nibble%20Customer%20%20Service...?'
+    target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+  <a class="whats-app1" href='tel:+918448933874'>
+    <i class="fa-sharp fa-solid fa-phone myphone"></i>
+  </a>
+  <nav class="w-full bg-white shadow-lg fixed " style="z-index: 99;">
+    <div class="flex justify-between md:w-full w-[80%] mx-auto ">
+      <div class="md:hidden block flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <a href="home.html" class="flex items-center py-4 px-2">
+            <img src="Assets/images/logo.jpeg" alt="Logo" class="h-8 w-full mr-2" />
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block sticky top-0 z-10 w-full">
+        <nav class="flex justify-around bg-white shadow-lg py-2">
+          <span class="w-100">
+            <a href="#">
+              <img src="./assets/images/logo.jpeg" alt="logo_img" class="h-[10vh]" /></a>
+          </span>
+
+          <ul class="flex justify-item-center w-100 my-auto ml-4">
+            <li class="lg:mx-6 mx-2 text-gray-700">
+              <a href="./home.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">HOME</a>
+            </li>
+            <li class="lg:mx-6 mx-3 relative group ">
+              <a href="#"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">WHO
+                WE ARE
+                <i class="fa-sharp fa-solid fa-angle-down"></i>
+              </a>
+
+              <ul
+                class="absolute bg-white py-0 w-[180%] hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block ">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./aboutus.html" class="ml-3">ABOUT US </a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gallery.html" class="ml-3">GALLERY</a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./media.html" class="ml-3">MEDIA AND EVENTS </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3 group">
+              <a href="./dilaveryarea.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">DELIVERY
+                AREAS
+                <i class="fa-sharp fa-solid fa-angle-down"></i></a>
+              <ul
+                class="absolute bg-white py-2 hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block w-[200px]">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gurgaon.html" class="ml-3">Gurgaon </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./blogs.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">BLOGS</a>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./contect.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">CONTACT
+                US
+              </a>
+            </li>
+            <li class="lg:mx-4 mx-3">
+              <a href="./howToOrder.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+                  class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  HOW TO ORDER
+                </button></a>
+            </li>
+            <li class="lg:mx-4 mmx-3">
+              <a href="./joinshef.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                <button
+                  class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  JOIN AS A CHEF
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500" x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active my-3">
+          <a href="./home.html" class="block text-sm px-2 py-2 text-white bg-[#E4D00A]">HOME</a>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="#" class="py-2 px-2 text-gray-500 transition duration-300">WHO WE ARE <span><i
+                class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white z-10 shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-2 hover:bg-gray-100"><a href="./aboutus.html"
+                class="block text-gray-700 ml-3 text-md ">ABOUT US </a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./Gallery.html"
+                class="block text-gray-700 ml-3">GALLERY</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./media.html"
+                class="block text-gray-700 ml-3  ">News And Events</a></li>
+          </ul>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="./dilaveryarea.html" class="py-4 px-2  text-gray-500 transition duration-300">DELIVERY
+            AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden z-10  mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="./Gurgaon.html"
+                class="block text-gray-700 ml-3 ">GURGAON</a></li>
+          </ul>
+        </li>
+
+        <li class="my-3">
+          <a href="./blogs.html" class="py-4 px-2 text-gray-500 transition duration-300">BLOGS</a>
+        </li>
+        <li class="my-3">
+          <a href="./contect.html"
+            class="py-4 px-2 uppercase text-gray-500 transition duration-300">Contact Us</a>
+        </li>
+        <li class="lg:mx-4 mx-3">
+          <a href="./howToOrder.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+              class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              HOW TO ORDER
+            </button></a>
+        </li>
+        <li class="lg:mx-4 my-2 mx-3">
+          <a href="./joinshef.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+            <button
+              class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              JOIN AS A CHEF
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- nav mobile and large screen end here -->
+    <!-- navbar end here -->
+    <div
+      class="w-full h-[50vh] flex justify-center items-center"
+      style="
+        background: linear-gradient(rgba(41, 34, 34, 0.925), rgba(6, 4, 4, 0.6)),
+          url('./assets/images/Joinchef/banner.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      "
+    >
+      <h2
+        class="text-white md:text-[3rem] text-[1rem] text-[#E4D00A] font-normal font-['Tahoma Condensed',Helvetica,Arial,Lucida,sans-serif']"
+      >
+        Join us as a Home Chef
+      </h2>
+    </div>
+    <!-- header end here -->
+
+    <!-- cards start here  -->
+
+    <div class="w-[95%] mx-auto mt-5 py-4">
+      <div class="grid md:grid-cols-2 lg:gap-4 md:gap-2 sm:gap-y-2">
+        <div
+          class="border-8 rounded-3xl border-green-700 py-[2rem] px-8 bg-green-100"
+        >
+          <h2
+            class="text-center text-[35px] text-green-700 shadow-sm font-semibold"
+          >
+            SELECTION CRITERIA
+          </h2>
+          <div
+            class="text-center w-[25%] mx-auto bg-green-700 rounded h-[1vh] my-2"
+          ></div>
+          <ul class="list-disc mx-auto px-4 text-[16px] py-4">
+            <li class="py-2">
+              A budding Chef who wants to start their home business.
+            </li>
+            <li class="py-2">
+              A well maintained, clean and hygienic cooking space.
+            </li>
+            <li class="py-2">
+              A passionate Chef who gives equal importance to quality and costs.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-8 rounded-3xl border-orange-500 py-[2rem] px-8 bg-orange-100"
+        >
+          <h2
+            class="text-center text-[35px] text-orange-500 shadow-sm font-semibold"
+          >
+            HOW IT WORKS
+          </h2>
+          <div
+            class="text-center w-[25%] mx-auto bg-orange-500 rounded h-[1vh] my-2"
+          ></div>
+          <ul class="list-disc mx-auto px-4 text-[16px] py-4">
+            <li class="py-2">Signup and download our apps.</li>
+            <li class="py-2">Setup your menu in the app.</li>
+            <li class="py-2">Open for Orders.</li>
+          </ul>
+        </div>
+        <div
+          class="border-8 rounded-3xl border-orange-500 py-[2rem] px-8 bg-orange-100"
+        >
+          <h2
+            class="text-center text-[35px] text-orange-500 shadow-sm font-semibold"
+          >
+            HOW DO YOU BENEFIT
+          </h2>
+          <div
+            class="text-center w-[25%] mx-auto bg-orange-500 rounded h-[1vh] my-2"
+          ></div>
+          <ul class="list-disc mx-auto px-4 text-[16px] py-4">
+            <li class="py-2">Get access to unlimited Consumers and orders.</li>
+            <li class="py-2">Professionally manage your business.</li>
+            <li class="py-2">Get recognized for your food.</li>
+            <li class="py-2">Start earning from Home.</li>
+          </ul>
+        </div>
+        <div
+          class="border-8 rounded-3xl border-green-700 py-[2rem] px-8 bg-green-100"
+        >
+          <h2
+            class="text-center text-[35px] text-green-700 shadow-sm font-semibold"
+          >
+            VERIFICATION VIA VISIT
+          </h2>
+          <div
+            class="text-center w-[25%] mx-auto bg-green-700 rounded h-[1vh] my-2"
+          ></div>
+          <ul class="list-disc mx-auto px-4 text-[16px] py-4">
+            <li class="py-2">
+              Our customers trust our service for quality, hygiene and
+              professionalism. Our team visits every Chef on location to check
+              and help improve cooking and packaging conditions and processes.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- form start here -->
+    <div
+      style="
+        background-image: url(./assets/images/Joinchef/formBgimage.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="w-[90%] mx-auto py-5 mt-2">
+        <h2
+          class="text-center lg:text-[45px] text-[#E4D00A] text-[30px] py-2 tracking-wider font-semibold"
+        >
+          REGISTER NOW
+        </h2>
+        <h2
+          class="text-center lg:text-[45px] text-[#E4D00A] text-[30px] py-1 tracking-wider font-semibold"
+        >
+          SUBMIT YOUR FORM
+        </h2>
+
+        <form id="joinUsForm" class="my-5">
+          <div class="py-3">
+            <input
+              type="name"
+              id="name"
+              name="name"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="py-3">
+            <input
+              type="address"
+              id="address"
+              name="address"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="address"
+              required
+            />
+          </div>
+          <div class="py-3">
+            <input
+              type="phone"
+              id="phone"
+              name="phoneNumber"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Phone No."
+              required
+            />
+          </div>
+          <div class="py-3">
+            <input
+              type="state"
+              id="state"
+              name="state"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="State"
+              required
+            />
+          </div>
+          <div class="py-3">
+            <input
+              type="city"
+              id="city"
+              name="city"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="City"
+              required
+            />
+          </div>
+          <div class="py-3">
+            <h2
+              for="idProofFile"
+              class="file-label dark:text-white md:w-[80%] w-[97%] mx-auto md:text-[22px] text-[18px] font-normal font-normal text-tight"
+            >
+              ID Proof (file upload)
+            </h2>
+            <input
+              type="file"
+              id="idProofFile"
+              name="idProofFile"
+              accept=".jpg, .jpeg, .png, .pdf, .zip, .docx"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="City"
+              required
+            />
+          </div>
+          <div class="py-3">
+            <h2
+              for="form-label"
+              class="md:w-[80%] w-[97%] mx-auto md:text-[22px] text-[18px] font-normal text-tight"
+            >
+              Address Proof (file upload)
+            </h2>
+            <!-- <label class="form-label" class="ml-[10rem]">Address Proof (file upload)</label> -->
+            <input
+              type="file"
+              id="addressProofFile"
+              name="addressProofFile"
+              accept=".jpg, .jpeg, .png, .pdf, .zip, .docx"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="addressProofFile"
+              required
+            />
+          </div>
+          <div class="py-3">
+            <h2
+              for="form-label"
+              class="md:w-[80%] w-[97%] mx-auto md:text-[22px] text-[18px] font-normal text-tight"
+            >
+              Any other documents (file upload)
+            </h2>
+            <!-- <label class="form-label" class="">Any other documents (file upload)</label> -->
+            <input
+              type="file"
+              id="addressProofFile"
+              name="otherDocumentsFile"
+              accept=".jpg, .jpeg, .png, .pdf, .zip, .docx"
+              class="bg-orange-50 border border-gray-300 text-black-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block md:w-[80%] w-[97%] mx-auto shadow-sm p-2 dark:bg-gray-700 dark:border-gray-600 mt-5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="addressProofFile"
+              required
+            />
+          </div>
+
+          <div class="text-center my-5">
+            <button
+              type="button"
+              id="submitBtn"
+              class="px-4 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--forms end here  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  </body>
+</html>

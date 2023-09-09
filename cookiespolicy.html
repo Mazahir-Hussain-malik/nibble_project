@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tahoma">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+    }
+
+    .whats-app,
+    .whats-app1 {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      /* left: 100px; */
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whats-app {
+      right: 35px;
+      transition: 0.3s ease-in-out;
+
+    }
+
+    .whats-app:hover {
+      background-color: #fff;
+      color: #25d366;
+    }
+
+    .whats-app1 {
+      left: 35px;
+      background-color: #E4D00A;
+      transition: 0.3s ease-in-out;
+    }
+
+    .whats-app1:hover {
+      background-color: #fff;
+      color: #E4D00A;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+
+    .myphone {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<title>cookiespolicy</title>
+
+<body>
+  <a class="whats-app"
+    href='https://api.whatsapp.com/send?phone=+918448933874&text=Hello,%20Nibble%20Customer%20%20Service...?'
+    target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+  <a class="whats-app1" href='tel:+918448933874'>
+    <i class="fa-sharp fa-solid fa-phone myphone"></i>
+  </a>
+  <nav class="w-full bg-white shadow-lg fixed " style="z-index: 99;">
+    <div class="flex justify-between md:w-full w-[80%] mx-auto ">
+      <div class="md:hidden block flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <a href="home.html" class="flex items-center py-4 px-2">
+            <img src="Assets/images/logo.jpeg" alt="Logo" class="h-8 w-full mr-2" />
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block sticky top-0 z-10 w-full">
+        <nav class="flex justify-around bg-white shadow-lg py-2">
+          <span class="w-100">
+            <a href="#">
+              <img src="./assets/images/logo.jpeg" alt="logo_img" class="h-[10vh]" /></a>
+          </span>
+
+          <ul class="flex justify-item-center w-100 my-auto ml-4">
+            <li class="lg:mx-6 mx-2 text-gray-700">
+              <a href="./home.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">HOME</a>
+            </li>
+            <li class="lg:mx-6 mx-3 relative group ">
+              <a href="#"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">WHO
+                WE ARE
+                <i class="fa-sharp fa-solid fa-angle-down"></i>
+              </a>
+
+              <ul
+                class="absolute bg-white py-0 w-[180%] hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block ">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./aboutus.html" class="ml-3">ABOUT US </a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gallery.html" class="ml-3">GALLERY</a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./media.html" class="ml-3">MEDIA AND EVENTS </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3 group">
+              <a href="./dilaveryarea.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">DELIVERY
+                AREAS
+                <i class="fa-sharp fa-solid fa-angle-down"></i></a>
+              <ul
+                class="absolute bg-white py-2 hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block w-[200px]">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gurgaon.html" class="ml-3">Gurgaon </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./blogs.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">BLOGS</a>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./contect.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">CONTACT
+                US
+              </a>
+            </li>
+            <li class="lg:mx-4 mx-3">
+              <a href="./howToOrder.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+                  class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  HOW TO ORDER
+                </button></a>
+            </li>
+            <li class="lg:mx-4 mmx-3">
+              <a href="./joinshef.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                <button
+                  class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  JOIN AS A CHEF
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500" x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active my-3">
+          <a href="./home.html" class="block text-sm px-2 py-2 text-white bg-[#E4D00A]">HOME</a>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="#" class="py-2 px-2 text-gray-500 transition duration-300">WHO WE ARE <span><i
+                class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white z-10 shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-2 hover:bg-gray-100"><a href="./aboutus.html"
+                class="block text-gray-700 ml-3 text-md ">ABOUT US </a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./Gallery.html"
+                class="block text-gray-700 ml-3">GALLERY</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./media.html"
+                class="block text-gray-700 ml-3  ">News And Events</a></li>
+          </ul>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="./dilaveryarea.html" class="py-4 px-2  text-gray-500 transition duration-300">DELIVERY
+            AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden z-10  mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="./Gurgaon.html"
+                class="block text-gray-700 ml-3 ">GURGAON</a></li>
+          </ul>
+        </li>
+
+        <li class="my-3">
+          <a href="./blogs.html" class="py-4 px-2 text-gray-500 transition duration-300">BLOGS</a>
+        </li>
+        <li class="my-3">
+          <a href="./contect.html"
+            class="py-4 px-2 uppercase text-gray-500 transition duration-300">Contact Us</a>
+        </li>
+        <li class="lg:mx-4 mx-3">
+          <a href="./howToOrder.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+              class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              HOW TO ORDER
+            </button></a>
+        </li>
+        <li class="lg:mx-4 my-2 mx-3">
+          <a href="./joinshef.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+            <button
+              class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              JOIN AS A CHEF
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- nav mobile and large screen end here -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    This Cookie Policy (“Cookie Policy”) is a part of and incorporated within
+    and is to be read along with the Privacy Policy (“Policy”) and Term of Use.
+    The capitalized terms used in this Cookie Policy, but not defined herein,
+    shall have the meaning given to such terms in the Privacy Policy. WHAT ARE
+    COOKIES AND LOCAL STORAGE? Cookies are small text files that are placed on
+    your browser or device by websites, apps, online media, and advertisements.
+    There are different types of cookies. Cookies served by the entity that
+    operates the domain you are visiting are called “first party cookies.” So,
+    cookies served by Nibble while you are on the Nibble Platform are first
+    party cookies. Cookies served by companies that are not operating the domain
+    you are visiting are called “third party cookies.” For eg., we may allow
+    Google to set a cookie on your browser while you visit the Nibble Platform,
+    and that would be a third party cookie. Cookies may also endure for
+    different periods of time. “Session Cookies” only last only as long as your
+    browser is open. These are deleted automatically once you close your
+    browser. Other cookies are “persistent cookies” meaning that they survive
+    after your browser is closed. For example, they may recognize your device
+    when you re-open your browser and browse the internet again. “Pixel tags”
+    (also called beacons or pixels) are small blocks of code installed on (or
+    called by) a webpage, app, or advertisement which can retrieve certain
+    information about your device and browser, including for example: device
+    type, operating system, browser type and version, website visited, time of
+    visit, referring website, IP address, and other similar information,
+    including the small text file (the cookie) that uniquely identifies the
+    device. Pixels provide the means by which third parties can set and read
+    browser cookies from a domain that they do not themselves operate and
+    collect information about visitors to that domain, typically with the
+    permission of the domain owner. Local storage is a technology that allows a
+    website or application to store information locally on your device.
+    “Software Development Kits” (also called SDKs) function like pixels and
+    cookies, but operate in the mobile app context where pixels and cookies
+    cannot always function. The primary app developer can install pieces of code
+    (the SDK) from partners in the app, and thereby allow the partner to collect
+    certain information about user interaction with the app and information
+    about the user device and network information. WHY DO WE USE THESE
+    TECHNOLOGIES? We use cookies and other identification technologies for
+    various purposes, including: authenticating users, store information about
+    you (including on your device or in your browser cache) and your use of our
+    Services and the Nibble Platform, remembering user preferences and settings,
+    determining the popularity of content, delivering and measuring the
+    effectiveness of advertising campaigns, analyzing site traffic and trends,
+    and generally understanding the online behaviours and interests of people
+    who interact with our Services. DO WE USE THIRD PARTY COOKIES? We use a
+    number of suppliers that may also set cookies on your device on our behalf
+    when you visit the Nibble Platform to allow them to deliver the services
+    they are providing. When you visit the Nibble Platform you may receive
+    cookies from third party websites or domains. More information about these
+    cookies may be available on the relevant third party’s website. ADDITIONAL
+    INFORMATION ABOUT THIRD PARTY ANALYTICS IN USE ON THE NIBBLE PLATFORM:
+    Facebook Connect. For more information about what Facebook collects when you
+    use Facebook buttons on the Nibble Platform, please see: Data Policy.
+    Twitter. For more information about what Twitter collects when you use the
+    Nibble Platform, please see:https://twitter.com/en/privacy. Google
+    Analytics: For more information about Google Analytics cookies, please see
+    Google’s help pages and privacy policy: Please note that this is not an
+    exhaustive list of all third party analytics providers that we work with.
+    HOW CAN I CONTROL COOKIES? Most internet browsers are initially set up to
+    automatically accept cookies. You can change the settings to block cookies
+    or to alert you when cookies are being sent to your device. There are a
+    number of ways to manage cookies. Please refer to your browser instructions
+    or help screen to learn more about how to adjust or modify your browser
+    settings. If you disable the cookies that we use, this may impact your
+    experience while on the Nibble Platform, for example you may not be able to
+    visit certain areas of the Nibble Platform or you may not receive
+    personalised information when you visit the Nibble Platform or you may also
+    be unable to login to services or programs, such as logging into forums or
+    accounts. If you use different devices to view and access the Nibble
+    Platform(e.g. your computer, smartphone, tablet etc) you will need to ensure
+    that each browser on each device is adjusted to suit your cookie
+    preferences. CHANGING YOUR COOKIE SETTINGS: The browser settings for
+    changing your cookies settings are usually found in the ‘options’ or
+    ‘preferences’ menu of your internet browser. In order to understand these
+    settings, the following links may be helpful. Otherwise you should use the
+    ‘Help’ option in your internet browser for more details. More
+    information: To find out more about cookies, including how to see what
+    cookies have been set and how to manage and delete them, visit About Cookies
+    or www.allaboutcookies.org .
+
+    <!-- footer-section  -->
+    <br>
+    <br>
+    <div class="bg-[#2C2C2C]">
+      <div class="w-[80%] py-[30px] mx-auto">
+        <div class="flex md:flex-row flex-col justify-between items-start">
+          <div class="mb-10">
+            <a href="home.html">
+              <h2 class="text-[30px] text-white font-bold">
+                <span class="italic">NIBBLE</span>
+              </h2>
+            </a>
+            <div class="text-white text-[20px] mt-[10px]">
+              <a
+                href="https://www.facebook.com/profile.php?id=100094471304554"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-facebook-f mr-4 cursor-pointer hover:text-[#007BB6]"
+                ></i>
+              </a>
+              <a href="https://twitter.com/Nibble_in" target="_blank">
+                <i
+                  class="fa-brands fa-twitter mr-4 cursor-pointer hover:text-[#007BB6]"
+                ></i>
+              </a>
+              <a href="https://www.instagram.com/nibble_in/" target="_blank">
+                <i
+                  class="fa-brands fa-instagram mr-4 cursor-pointer hover:text-[#007BB6]"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="flex sm:flex-row flex-col text-white text-[13px]">
+            <a href="./home.html" class="mr-3">HOME</a>
+            <a href="./Aboutus.html" class="mr-3">ABOUT US</a>
+            <a href="./joinshef.html" class="mr-3">JOIN AN CHEF</a>
+            <a href="./Gallery.html" class="mr-3">MEDIA AND EVENTS</a>
+            <a href="./blogs.html" class="mr-3">BLOG</a>
+            <a href="./contect.html" class="mr-3">CONTACT US</a>
+          </div>
+        </div>
+        <div class="flex md:flex-row flex-col-reverse justify-between my-10">
+          <h2 class="md:text-[17px] text-[15px] text-white font-bold">
+            <span class="italic">Developed by Nibble</span>@2023 All Rights
+            Reserved.
+          </h2>
+          <div class="flex sm:flex-row flex-col text-white text-[13px]">
+            <a href="privacy.html" class="mr-3">PRIVACY POLICY</a>
+            <a href="userstc.html" class="mr-3">USER T&C</a>
+            <a href="cookiespolicy.html" class="mr-3">COOKIE POLICY</a>
+            <a href="cheifstc.html" class="mr-3">CHEFS & TC</a>
+            <a href="faqs.html" class="mr-3">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tahoma">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+    }
+
+    .whats-app,
+    .whats-app1 {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      /* left: 100px; */
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whats-app {
+      right: 35px;
+      transition: 0.3s ease-in-out;
+
+    }
+
+    .whats-app:hover {
+      background-color: #fff;
+      color: #25d366;
+    }
+
+    .whats-app1 {
+      left: 35px;
+      background-color: #E4D00A;
+      transition: 0.3s ease-in-out;
+    }
+
+    .whats-app1:hover {
+      background-color: #fff;
+      color: #E4D00A;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+
+    .myphone {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<title>NIBBLE</title>
+
+<body>
+  <a class="whats-app"
+    href='https://api.whatsapp.com/send?phone=+918448933874&text=Hello,%20Nibble%20Customer%20%20Service...?'
+    target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+  <a class="whats-app1" href='tel:+918448933874'>
+    <i class="fa-sharp fa-solid fa-phone myphone"></i>
+  </a>
+  <nav class="w-full bg-white shadow-lg fixed " style="z-index: 99;">
+    <div class="flex justify-between md:w-full w-[80%] mx-auto ">
+      <div class="md:hidden block flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <a href="home.html" class="flex items-center py-4 px-2">
+            <img src="Assets/images/logo.jpeg" alt="Logo" class="h-8 w-full mr-2" />
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block sticky top-0 z-10 w-full">
+        <nav class="flex justify-around bg-white shadow-lg py-2">
+          <span class="w-100">
+            <a href="#">
+              <img src="./assets/images/logo.jpeg" alt="logo_img" class="h-[10vh]" /></a>
+          </span>
+
+          <ul class="flex justify-item-center w-100 my-auto ml-4">
+            <li class="lg:mx-6 mx-2 text-gray-700">
+              <a href="./home.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">HOME</a>
+            </li>
+            <li class="lg:mx-6 mx-3 relative group ">
+              <a href="#"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">WHO
+                WE ARE
+                <i class="fa-sharp fa-solid fa-angle-down"></i>
+              </a>
+
+              <ul
+                class="absolute bg-white py-0 w-[180%] hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block ">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./aboutus.html" class="ml-3">ABOUT US </a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gallery.html" class="ml-3">GALLERY</a>
+                </li>
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./media.html" class="ml-3">MEDIA AND EVENTS </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3 group">
+              <a href="./dilaveryarea.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">DELIVERY
+                AREAS
+                <i class="fa-sharp fa-solid fa-angle-down"></i></a>
+              <ul
+                class="absolute bg-white py-2 hidden group-hover:block transition transition-all delay-200 shadow-lg ml-[-1rem] group-hover:block w-[200px]">
+                <li class="py-3 hover:bg-gray-100 md:text-[1vw] hover:cursor-pointer  hover:text-[#FFBC0D] transition duration-500">
+                  <a href="./Gurgaon.html" class="ml-3">Gurgaon </a>
+                </li>
+              </ul>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./blogs.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">BLOGS</a>
+            </li>
+            <li class="lg:mx-6 mx-3">
+              <a href="./contect.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">CONTACT
+                US
+              </a>
+            </li>
+            <li class="lg:mx-4 mx-3">
+              <a href="./howToOrder.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+                  class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  HOW TO ORDER
+                </button></a>
+            </li>
+            <li class="lg:mx-4 mmx-3">
+              <a href="./joinshef.html"
+                class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                <button
+                  class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+                  JOIN AS A CHEF
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500" x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active my-3">
+          <a href="./home.html" class="block text-sm px-2 py-2 text-white bg-[#E4D00A]">HOME</a>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="#" class="py-2 px-2 text-gray-500 transition duration-300">WHO WE ARE <span><i
+                class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white z-10 shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-2 hover:bg-gray-100"><a href="./aboutus.html"
+                class="block text-gray-700 ml-3 text-md ">ABOUT US </a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./Gallery.html"
+                class="block text-gray-700 ml-3">GALLERY</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="./media.html"
+                class="block text-gray-700 ml-3  ">News And Events</a></li>
+          </ul>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="./dilaveryarea.html" class="py-4 px-2  text-gray-500 transition duration-300">DELIVERY
+            AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden z-10  mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="./Gurgaon.html"
+                class="block text-gray-700 ml-3 ">GURGAON</a></li>
+          </ul>
+        </li>
+
+        <li class="my-3">
+          <a href="./blogs.html" class="py-4 px-2 text-gray-500 transition duration-300">BLOGS</a>
+        </li>
+        <li class="my-3">
+          <a href="./contect.html"
+            class="py-4 px-2 uppercase text-gray-500 transition duration-300">Contact Us</a>
+        </li>
+        <li class="lg:mx-4 mx-3">
+          <a href="./howToOrder.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500"><button
+              class="text-white bg-[#FFBC0D] px-2 md:px-4 py-2 md:py-1 rounded-lg border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              HOW TO ORDER
+            </button></a>
+        </li>
+        <li class="lg:mx-4 my-2 mx-3">
+          <a href="./joinshef.html"
+            class="md:text-[1vw] text-[14px] font-normal hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+            <button
+              class="px-2 py-2 md:px-4 md:py-1 bg-[#FFBC0D] rounded-lg text-white border hover:border-4-[#FFBC0D] hover:border-[#FFBC0D] hover:cursor-pointer hover:bg-white hover:text-[#FFBC0D] transition duration-500">
+              JOIN AS A CHEF
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- nav mobile and large screen end here -->
+    <!-- hero section goes here -->
+    <div class="aboutHeader">
+      <div
+        class="aboutHeader_bgImage h-[60vh] bg-cover bg-center bg-no-repeat"
+        style="
+          background: linear-gradient(
+              rgba(41, 34, 34, 0.925),
+              rgba(6, 4, 4, 0.6)
+            ),
+            url(./assets/images/MediaImages/MediaHeader.png);
+          background-size: cover;
+        "
+      >
+        <div class="flex items-center justify-center">
+          <h2
+            class="text-white sm:text-[3rem] text-[1rem] font-normal lg:py-[10rem] font-['Tahoma Condensed',Helvetica,Arial,Lucida,sans-serif']"
+          >
+            Media & Events
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- hero section ends here -->
+    <!-- section-6  -->
+  <div class="w-full h-auto">
+    <div class="md:h-[100vh] h-auto flex justify-center items-center" style="
+          background: url('Assets/images/Home/home-foodi-1.webp')
+            no-repeat center center;
+          background-size: cover;
+        ">
+      <div class="md:w-[40%] w-[80%] flex flex-col items-center mx-auto text-center">
+        <h2 class="text-[25px] font-bold">Download Our App</h2>
+        <p class="mt-4 font-semibold md:text-[17px] text-[15px]">
+            Yes, we all know, nothing like Ghar Ka Khana but Finding home food was never an easy thing. Rejoice! Great News! Now it is with Nibble.
+        </p>
+        <p class="mt-4 font-semibold md:text-[17px] text-[15px]">    Now you can get the food as per your taste/requirement from Home Chef’s Kitchen and that too freshly prepared. Choose from a countless variety of Home Chefs from Food to Bakers.
+        </p>
+        
+      
+        <div class="md:my-10 my-5">
+          <img class="md:h-[130px] h-[60px]" src="Assets/images/Home/fav1.webp" alt="" />
+        </div>
+
+        <div class="sm:w-full w-[50%] md:my-10 my-5 flex sm:flex-row flex-col justify-around">
+          <a href="https://play.google.com/store/apps/details?id=com.nibble.customer" target="_blank">
+            <img class="h-[50px] rounded w-full" src="Assets/images/Home/playstore1.webp" alt="" />
+          </a>
+          <a href="https://apps.apple.com/in/app/nibble-ghar-ka-khaana-rozaana/id6450506736" target="_blank">
+            <img class="h-[50px] rounded w-full sm:mt-0 mt-4" src="Assets/images/Home/playstore2.webp" alt="" />
+          </a>
+        </div>
+        <div class="flex sm:flex-row flex-col">
+          <a href="https://www.facebook.com/profile.php?id=100094471304554" target="_blank" class="sm:my-0 my-2">
+            <i
+              class="fa-brands fa-facebook-f bg-[#2C4271] text-white mr-3 text-[35px] py-3 px-[17px] rounded-[5px] border hover:border-4-[#2C4271] hover:border-[#2C4271] hover:cursor-pointer hover:bg-white hover:text-[#2C4271] transition duration-500"></i>
+          </a>
+          <a href="https://www.instagram.com/nibble_in/" target="_blank" class="sm:my-0 my-2">
+            <i
+              class="fa-brands fa-instagram bg-[#AF2143] text-white mr-3 text-[35px] py-3 px-[12px] rounded-[5px] border hover:border-4-[#AF2143] hover:border-[#AF2143] hover:cursor-pointer hover:bg-white hover:text-[#AF2143] transition duration-500"></i>
+          </a>
+          <a href="https://twitter.com/Nibble_in" target="_blank" class="">
+            <i
+              class="fa-brands fa-twitter bg-[#00ACED] text-white mr-3 text-[35px] py-3 px-[12px] rounded-[5px] border hover:border-4-[#00ACED] hover:border-[#00ACED] hover:cursor-pointer hover:bg-white hover:text-[#00ACED] transition duration-500"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-auto ">
+      <div class="md:h-[70vh] h-[100%] flex flex-col justify-center items-center" style="
+            background: url('Assets/images/Home/download.svg') no-repeat
+              center center;
+            background-size: cover;
+          ">
+        <div class="w-[80%] md:py-[80px] py-[40px] text-center mx-auto">
+          <a class="md:text-[28px] text-[20px] text-[#FFBC0D] font-bold" href="Gurgaon.html" target="_blank">| Gurgaon
+            |</a>
+          <p class="md:text-[20px] text-[16px] mt-4 text-[#FFBC0D] font-semibold lg:leading-[45px] leading-auto">
+            Food Delivery Apps <span class="text-[#000]">|</span> Food for
+            Senior Citizens <span class="text-[#000]">|</span> Home Food
+            Delivery in Gurgaon <span class="text-[#000]">|</span> Home Food
+            Delivery in Gurgaon <span class="text-[#000]">|</span> Corporate
+            Catering Services in Gurgaon
+            <span class="text-[#000]">|</span> Party Catering Services in
+            Gurgaon <span class="text-[#000]">|</span> Diet Food
+            <span class="text-[#000]">|</span> Homemade Veg Thali Delivery
+            <span class="text-[#000]">|</span> Ghar ka Khana
+            <span class="text-[#000]">|</span> Food for Patients
+            <span class="text-[#000]">|</span> Fresh and Healthy Home Cooked
+            Food <span class="text-[#000]">|</span> Home Food near Me
+            <span class="text-[#000]">|</span> Order Homemade Sweets | Online
+            Biryani Order <span class="text-[#000]">|</span> Biryani near Me
+            <span class="text-[#000]">|</span> Cakes
+            <span class="text-[#000]">|</span> Cakes Shop near Me
+            <span class="text-[#000]">|</span> Catering Services near Me
+            <span class="text-[#000]">|</span> Bakeries near Me
+            <span class="text-[#000]">|</span> Home Food Delivery in Gurgaon
+            <span class="text-[#000]">|</span> Home Delivery Food in Gurgaon
+            <span class="text-[#000]">|</span> Food near Me
+            <span class="text-[#000]">|</span> Momos near Me
+            <span class="text-[#000]">|</span> Pizza near Me
+            <span class="text-[#000]">|</span> Bakery near Me
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer-section  -->
+  <div class="bg-[#2C2C2C]">
+    <div class="w-[80%] py-[30px] mx-auto">
+      <div class="flex md:flex-row flex-col justify-between items-start">
+        <div class="mb-10">
+          <a href="home.html">
+            <h2 class="md:text-[17px] text-[15px] text-white font-bold"><span class="italic">NIBBLE</span></h2>
+
+          </a>
+          <div class="text-white text-[20px] mt-[10px]">
+            <a href="https://www.facebook.com/profile.php?id=100094471304554" target="_blank"> <i
+                class="fa-brands fa-facebook-f mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://twitter.com/Nibble_in" target="_blank">
+              <i class="fa-brands fa-twitter mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://www.instagram.com/nibble_in/" target="_blank">
+              <i class="fa-brands fa-instagram mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+          </div>
+        </div>
+        <div class="flex sm:flex-row flex-col text-white text-[13px]">
+          <a href="./home.html" class="mr-3">HOME</a>
+          <a href="./Aboutus.html" class="mr-3">ABOUT US</a>
+         <a href="./joinshef.html" class="mr-3">JOIN AN CHEF</a>
+          <a href="./Gallery.html" class="mr-3">MEDIA AND EVENTS</a>
+          <a href="./blogs.html" class="mr-3">BLOG</a>
+          <a href="./contect.html" class="mr-3">CONTACT US</a>
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col-reverse justify-between my-10">
+        <h2 class="md:text-[17px] text-[15px] text-white font-bold"><span class="italic">Developed by
+            Nibble</span>@2023 All Rights Reserved.</h2>
+         <div class="flex sm:flex-row flex-col text-white text-[13px]">
+          <a href="privacy.html" class="mr-3">PRIVACY POLICY</a>
+          <a href="userstc.html" class="mr-3">USER T&C</a>
+          <a href="cookiespolicy.html" class="mr-3">COOKIE POLICY</a>
+          <a href="cheifstc.html" class="mr-3">CHEFS & TC</a>
+          <a href="faqs.html" class="mr-3">FAQs</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  </body>
+</html>
